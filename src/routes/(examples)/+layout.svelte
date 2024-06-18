@@ -114,7 +114,7 @@
       {@html markdownHtml}<slot />
       <div class="navMarkdown">
         {#if prev}
-          <a style="position: absolute; left: 50px;" href={prev.id}>
+          <a style="position: absolute; left: 50px;" href="/{prev.id}">
             <svg
               style="transform: rotate(180deg);"
               fill="none"
@@ -127,7 +127,7 @@
           </a>
         {/if}
         {#if next}
-          <a style="position: absolute; right: 50px;" href={next.id}>
+          <a style="position: absolute; right: 50px;" href="/{next.id}">
             {next.name}
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="nx-inline nx-h-5 nx-shrink-0 rtl:nx-rotate-180"
               ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg
@@ -135,7 +135,7 @@
           </a>
         {/if}
       </div>
-      <a class="allExamples" href="all">All Examples</a>
+      <a class="allExamples" href="/all">All Examples</a>
     </div>
     <svelte:fragment slot="splitter">
       <DefaultSplitter color="rgb(17, 17, 17)" hoverColor="#444" dragColor="#444" />
@@ -207,7 +207,7 @@
 
   <div class="navMarkdown" style="padding: 40px;">
     {#if prev}
-      <a style="float: left; margin-bottom: 15px;" href={prev.id}>
+      <a style="float: left; margin-bottom: 15px;" href="/{prev.id}">
         <svg
           style="transform: rotate(180deg);"
           fill="none"
@@ -220,7 +220,7 @@
       </a>
     {/if}
     {#if next}
-      <a style="float: right; margin-bottom: 15px;" href={next.id}>
+      <a style="float: right; margin-bottom: 15px;" href="/{next.id}">
         {next.name}
         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="nx-inline nx-h-5 nx-shrink-0 rtl:nx-rotate-180"
           ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg
@@ -228,5 +228,5 @@
       </a>
     {/if}
   </div>
-  <a class="allExamples" style="margin-bottom: 30px;" href="all">All Examples</a>
+  <a class="allExamples" style="margin-bottom: 30px;" href="/all">All Examples</a>
 {/if}

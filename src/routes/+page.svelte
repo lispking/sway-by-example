@@ -3,6 +3,6 @@
   import { onMount } from "svelte";
 
   onMount(() => {
-    goto("/00-hello-modular", { replaceState: false });
+    goto("/all", { replaceState: true });
   });
 </script>
