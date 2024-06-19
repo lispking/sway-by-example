@@ -38,5 +38,9 @@
   {
     "id": "09-constants",
     "name": "constants"
+  },
+  {
+    "id": "10-configurable-constants",
+    "name": "configurable-constants"
   }
 ]
