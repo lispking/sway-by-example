@@ -58,5 +58,9 @@
   {
     "id": "14-control-flow-match",
     "name": "control-flow-match"
+  },
+  {
+    "id": "15-control-flow-while-loop",
+    "name": "control-flow-while-loop"
   }
 ]
