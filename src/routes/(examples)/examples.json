@@ -34,5 +34,9 @@
   {
     "id": "08-enums",
     "name": "enums"
+  },
+  {
+    "id": "09-constants",
+    "name": "constants"
   }
 ]
