@@ -28,7 +28,7 @@
   let contractInstances: any[];
   let next: { name: string; id: string } | undefined, prev: { name: string; id: string } | undefined;
   const url = new URL($page.url.href);
-  const lang = url.searchParams.get('lang');
+  const lang = url.searchParams.get('lang') ?? 'en';
 
   store.subscribe(async (s) => {
     if (!s.swayCode) return;
