@@ -1,4 +1,4 @@
-# Primitive types
+# Primitive Types
 
 In Sway, you can use a variety of basic types to construct smart contracts.
 1. **Unsigned Integers**:

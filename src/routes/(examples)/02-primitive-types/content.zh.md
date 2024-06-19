@@ -1,4 +1,4 @@
-# Primitive types
+# Primitive Types
 
 在Sway中，你可以使用多种基础类型来构建智能合约。
 
