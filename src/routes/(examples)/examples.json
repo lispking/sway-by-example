@@ -66,5 +66,13 @@
   {
     "id": "16-logging",
     "name": "logging"
+  },
+  {
+    "id": "17-storage-map",
+    "name": "storage-map"
+  },
+  {
+    "id": "18-vector",
+    "name": "vector"
   }
 ]

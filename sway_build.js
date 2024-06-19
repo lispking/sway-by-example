@@ -19,10 +19,14 @@ for (const i in examples) {
         continue;
     }
 
-    console.log(`   > ${example.id} Converting...`);
-    execSync(`forc build --path ${routesDir}/\\(examples\\)/${example.id} --release`);
-
     const releasePath = `${examplesDir}/${example.id}/out/release`;
-    fs.writeFileSync(`${releasePath}/${example.name}.hex`, binToHex(`${releasePath}/${example.name}.bin`));
-    console.log(`   > ${example.id} Converted successfully`);
+    if (!fs.existsSync(`${releasePath}/${example.name}.hex`)) {
+        console.log(`   > ${example.id} Converting...`);
+        execSync(`forc build --path ${routesDir}/\\(examples\\)/${example.id} --release`);
+    
+        fs.writeFileSync(`${releasePath}/${example.name}.hex`, binToHex(`${releasePath}/${example.name}.bin`));
+        console.log(`   > ${example.id} Converted successfully`);
+    } else {
+        console.log(`   > ${example.id} Already converted`);
+    }
 }
