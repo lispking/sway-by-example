@@ -30,5 +30,9 @@
   {
     "id": "07-tuples",
     "name": "tuples"
+  },
+  {
+    "id": "08-enums",
+    "name": "enums"
   }
 ]

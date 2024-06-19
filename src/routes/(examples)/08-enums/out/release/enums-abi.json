@@ -1,0 +1,77 @@
+{
+  "encoding": "1",
+  "types": [
+    {
+      "typeId": 0,
+      "type": "()",
+      "components": [],
+      "typeParameters": null
+    },
+    {
+      "typeId": 1,
+      "type": "enum AuthError",
+      "components": [
+        {
+          "name": "NotOwner",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "NotApproved",
+          "type": 0,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 2,
+      "type": "enum Error",
+      "components": [
+        {
+          "name": "Auth",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "Transfer",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 3,
+      "type": "enum TransferError",
+      "components": [
+        {
+          "name": "TransferToZeroAddress",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "InsufficientBalance",
+          "type": 0,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [],
+      "name": "test_func",
+      "output": {
+        "name": "",
+        "type": 2,
+        "typeArguments": null
+      },
+      "attributes": null
+    }
+  ],
+  "loggedTypes": [],
+  "messagesTypes": [],
+  "configurables": []
+}
