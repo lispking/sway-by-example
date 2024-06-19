@@ -26,5 +26,9 @@
   {
     "id": "06-structs",
     "name": "structs"
+  },
+  {
+    "id": "07-tuples",
+    "name": "tuples"
   }
 ]
