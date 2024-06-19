@@ -62,5 +62,9 @@
   {
     "id": "15-control-flow-while-loop",
     "name": "control-flow-while-loop"
+  },
+  {
+    "id": "16-logging",
+    "name": "logging"
   }
 ]
