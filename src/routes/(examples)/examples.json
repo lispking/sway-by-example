@@ -82,5 +82,9 @@
   {
     "id": "19-base-asset",
     "name": "base-asset"
+  },
+  {
+    "id": "20-multi-sig-wallet",
+    "name": "multi-sig-wallet"
   }
 ]

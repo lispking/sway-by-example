@@ -11,10 +11,14 @@ export function binToHex(str: string): string {
     return hex;
 }
 
-export async function deploy(bytecode: any, abi: any, storageSlots: any): Promise<Contract> {
+export async function deploy(bytecode: any, abi: any, storageSlots: any | undefined): Promise<Contract> {
     const wallet = await connectWallet();
     const factory = new ContractFactory(bytecode, abi, wallet);
-    return await factory.deployContract({ storageSlots });
+
+    if (storageSlots) {
+        return await factory.deployContract({ storageSlots });
+    }
+    return await factory.deployContract();
 }
 
 export async function loadContract(contractId: string, abi: any): Promise<Contract> {
