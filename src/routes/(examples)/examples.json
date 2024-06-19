@@ -1,5 +1,9 @@
 [
   {
+    "id": "00-cheatsheet-solidity",
+    "name": "cheatsheet-solidity"
+  },
+  {
     "id": "00-hello-modular",
     "name": "hello-modular"
   },
