@@ -10,5 +10,9 @@
   {
     "id": "02-primitive-types",
     "name": "primitive-types"
+  },
+  {
+    "id": "03-compound-types",
+    "name": "compound-types"
   }
 ]
