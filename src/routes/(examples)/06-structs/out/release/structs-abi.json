@@ -1,0 +1,60 @@
+{
+  "encoding": "1",
+  "types": [
+    {
+      "typeId": 0,
+      "type": "struct Line",
+      "components": [
+        {
+          "name": "p0",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "p1",
+          "type": 1,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 1,
+      "type": "struct Point",
+      "components": [
+        {
+          "name": "x",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "y",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 2,
+      "type": "u64",
+      "components": null,
+      "typeParameters": null
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [],
+      "name": "test_func",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": null
+    }
+  ],
+  "loggedTypes": [],
+  "messagesTypes": [],
+  "configurables": []
+}

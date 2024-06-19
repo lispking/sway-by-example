@@ -22,5 +22,9 @@
   {
     "id": "05-functions",
     "name": "functions"
+  },
+  {
+    "id": "06-structs",
+    "name": "structs"
   }
 ]
