@@ -42,5 +42,9 @@
   {
     "id": "10-configurable-constants",
     "name": "configurable-constants"
+  },
+  {
+    "id": "11-options",
+    "name": "options"
   }
 ]
