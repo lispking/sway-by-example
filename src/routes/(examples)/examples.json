@@ -74,5 +74,9 @@
   {
     "id": "18-vector",
     "name": "vector"
+  },
+  {
+    "id": "19-base-asset",
+    "name": "base-asset"
   }
 ]
