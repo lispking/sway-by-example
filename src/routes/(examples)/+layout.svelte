@@ -109,6 +109,11 @@
   </div>
 {/if}
 
+<nav class="NavLinks">
+  <a href="?lang=en" target="_self">English</a>
+  <a href="?lang=zh" target="_self">简体中文</a>
+</nav>
+
 {#if !mobile()}
   <Split initialPrimarySize="47%">
     <div slot="primary" class="panelMarkdown" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; overflow: scroll;">
@@ -182,7 +187,7 @@
   </div>
 
   <div class="panelCode" style="margin: 20px;">
-    <div style="height: 100%; overflow: scroll;">
+    <div style="height: 80%; overflow: scroll;">
       <div contenteditable="false" bind:innerHTML={swayHtml} class="dark" />
     </div>
   </div>

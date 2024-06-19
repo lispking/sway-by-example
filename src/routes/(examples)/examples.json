@@ -2,5 +2,9 @@
   {
     "id": "00-hello-modular",
     "name": "hello-modular"
+  },
+  {
+    "id": "01-variables",
+    "name": "variables"
   }
 ]

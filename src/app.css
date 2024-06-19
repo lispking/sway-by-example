@@ -176,3 +176,15 @@ input::-webkit-inner-spin-button {
   line-height: 60px;
   white-space: nowrap;
 }
+
+.NavLinks {
+  padding: 5px;
+  text-align: center;
+}
+
+.NavLinks a {
+  color: rgb(209, 213, 219);
+  text-decoration: none;
+  font-size: 18px;
+  white-space: nowrap;
+}

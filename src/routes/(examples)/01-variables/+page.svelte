@@ -9,9 +9,9 @@
   import zhMarkdown from "./content.zh.md?raw";
 
   import swayCode from "./src/main.sw?raw";
-  import hexContent from './out/release/hello-modular.hex?raw';
-  import abiContent from './out/release/hello-modular-abi.json?raw';
-  import storageSlotsContent from './out/release/hello-modular-storage_slots.json?raw';
+  import hexContent from './out/release/variables.hex?raw';
+  import abiContent from './out/release/variables-abi.json?raw';
+  import storageSlotsContent from './out/release/variables-storage_slots.json?raw';
 
   const url = new URL($page.url.href);
   const lang = url.searchParams.get('lang');
@@ -31,8 +31,8 @@
     },
     messages: {},
     getters: {
-      my_lucky_number: async () => {
-        const { value } =  await contract.functions.my_lucky_number().get()
+      test_func: async () => {
+        const { value } =  await contract.functions.test_func().get()
         return value.toNumber();
       },
     },
