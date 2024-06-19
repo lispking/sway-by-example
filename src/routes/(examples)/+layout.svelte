@@ -8,6 +8,7 @@
   import { convertToText } from "$lib/helpers";
   import { mobile } from "$lib/mobile";
   import store from "$lib/store";
+  import { page } from '$app/stores';
 
   import "../../loader.css";
   import "../../app.css";
@@ -26,6 +27,8 @@
   let terminalContent = "";
   let contractInstances: any[];
   let next: { name: string; id: string } | undefined, prev: { name: string; id: string } | undefined;
+  const url = new URL($page.url.href);
+  const lang = url.searchParams.get('lang');
 
   store.subscribe(async (s) => {
     if (!s.swayCode) return;
@@ -120,7 +123,7 @@
       {@html markdownHtml}<slot />
       <div class="navMarkdown">
         {#if prev}
-          <a style="position: absolute; left: 50px;" href="/{prev.id}">
+          <a style="position: absolute; left: 50px;" href="/{prev.id}?lang={lang}">
             <svg
               style="transform: rotate(180deg);"
               fill="none"
@@ -133,7 +136,7 @@
           </a>
         {/if}
         {#if next}
-          <a style="position: absolute; right: 50px;" href="/{next.id}">
+          <a style="position: absolute; right: 50px;" href="/{next.id}?lang={lang}">
             {next.name}
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="nx-inline nx-h-5 nx-shrink-0 rtl:nx-rotate-180"
               ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg
@@ -213,7 +216,7 @@
 
   <div class="navMarkdown" style="padding: 40px;">
     {#if prev}
-      <a style="float: left; margin-bottom: 15px;" href="/{prev.id}">
+      <a style="float: left; margin-bottom: 15px;" href="/{prev.id}?lang={lang}">
         <svg
           style="transform: rotate(180deg);"
           fill="none"
@@ -226,7 +229,7 @@
       </a>
     {/if}
     {#if next}
-      <a style="float: right; margin-bottom: 15px;" href="/{next.id}">
+      <a style="float: right; margin-bottom: 15px;" href="/{next.id}?lang={lang}">
         {next.name}
         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="nx-inline nx-h-5 nx-shrink-0 rtl:nx-rotate-180"
           ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg
