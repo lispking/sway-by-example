@@ -18,5 +18,9 @@
   {
     "id": "04-blockchain-types",
     "name": "blockchain-types"
+  },
+  {
+    "id": "05-functions",
+    "name": "functions"
   }
 ]
