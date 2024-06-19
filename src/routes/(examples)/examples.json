@@ -14,5 +14,9 @@
   {
     "id": "03-compound-types",
     "name": "compound-types"
+  },
+  {
+    "id": "04-blockchain-types",
+    "name": "blockchain-types"
   }
 ]
