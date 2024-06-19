@@ -1,12 +1,11 @@
 <script lang="ts">
   import { getExample } from "$lib/helpers";
   import store from "$lib/store";
-  import { binToHex, deploy, loadContract } from "$lib/deploy";
+  import { deploy } from "$lib/deploy";
   import type { Contract } from "fuels";
 
   import markdown from "./content.md?raw";
   import swayCode from "./src/main.sw?raw";
-  import binContent from './out/release/hello-modular.bin?raw';
   import hexContent from './out/release/hello-modular.hex?raw';
   import abiContent from './out/release/hello-modular-abi.json?raw';
   import storageSlotsContent from './out/release/hello-modular-storage_slots.json?raw';
