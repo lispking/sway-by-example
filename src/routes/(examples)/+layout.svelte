@@ -66,8 +66,9 @@
       terminalLog(`> 📝 Deploying contract:`);
       const contracts = await deploy();
       contractInstances = contracts;
+      terminalLog(`Contract was successfully deployed to ${contracts[0].provider.url}`)
       terminalLog(`Deployed ${contracts.length} contract(s)`);
-      terminalLog(`Contract address(es): ${contracts.map((c) => c.id.toString()).join(", ")}`);
+      terminalLog(`Contract address(es): ${contracts.map((c) => c.id.toHexString()).join(", ")}`);
     } catch (e: any) {
       terminalError(e);
     }
