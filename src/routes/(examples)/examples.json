@@ -1,0 +1,90 @@
+[
+  {
+    "id": "00-cheatsheet-solidity",
+    "name": "cheatsheet-solidity"
+  },
+  {
+    "id": "00-hello-modular",
+    "name": "hello-modular"
+  },
+  {
+    "id": "01-variables",
+    "name": "variables"
+  },
+  {
+    "id": "02-primitive-types",
+    "name": "primitive-types"
+  },
+  {
+    "id": "03-compound-types",
+    "name": "compound-types"
+  },
+  {
+    "id": "04-blockchain-types",
+    "name": "blockchain-types"
+  },
+  {
+    "id": "05-functions",
+    "name": "functions"
+  },
+  {
+    "id": "06-structs",
+    "name": "structs"
+  },
+  {
+    "id": "07-tuples",
+    "name": "tuples"
+  },
+  {
+    "id": "08-enums",
+    "name": "enums"
+  },
+  {
+    "id": "09-constants",
+    "name": "constants"
+  },
+  {
+    "id": "10-configurable-constants",
+    "name": "configurable-constants"
+  },
+  {
+    "id": "11-options",
+    "name": "options"
+  },
+  {
+    "id": "12-results",
+    "name": "results"
+  },
+  {
+    "id": "13-control-flow-if",
+    "name": "control-flow-if"
+  },
+  {
+    "id": "14-control-flow-match",
+    "name": "control-flow-match"
+  },
+  {
+    "id": "15-control-flow-while-loop",
+    "name": "control-flow-while-loop"
+  },
+  {
+    "id": "16-logging",
+    "name": "logging"
+  },
+  {
+    "id": "17-storage-map",
+    "name": "storage-map"
+  },
+  {
+    "id": "18-vector",
+    "name": "vector"
+  },
+  {
+    "id": "19-base-asset",
+    "name": "base-asset"
+  },
+  {
+    "id": "20-multi-sig-wallet",
+    "name": "multi-sig-wallet"
+  }
+]
